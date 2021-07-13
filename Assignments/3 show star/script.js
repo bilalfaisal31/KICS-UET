@@ -1,6 +1,8 @@
 function showStars(a) {
   for (let i = 1; i <= a; i++) {
-    console.log("*".repeat(i));
+    str += "*".repeat(i) + "\n";
   }
 }
-showStars(10);
+let str = "";
+showStars(5);
+console.log(str);
