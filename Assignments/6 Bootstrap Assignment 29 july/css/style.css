@@ -1,0 +1,16 @@
+body {
+  background-color: lightgrey;
+}
+.container {
+  margin-top: 3rem;
+  background-color: #85b3d1ff;
+  height: 20rem;
+}
+.blue-shade {
+  background-color: #2460a7ff;
+  height: 20rem;
+}
+.col2 {
+  background-color: #b3c7d6ff;
+  height: 20rem;
+}
