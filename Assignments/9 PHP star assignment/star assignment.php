@@ -15,7 +15,22 @@
     <?php 
         echo '<br><br>';
 
-        function printStarts($num){
+        
+        function printStars($num){
+            $i = 0;
+            while($i<$num){
+                $j=0;
+                while($j<=$i){
+                    echo "* ";
+                    $j++;
+                }
+                echo "<br>";
+                $i++;
+            }
+            echo "<br><br>";
+        }
+
+        function printStarsDesign2($num){
             $i = 0;
             while($i<$num){
                 $j=0;
@@ -37,9 +52,35 @@
                 echo "<br>";
                 $i++;
             }
-            echo '<br>';
+            echo "<br><br>";
         }
-        printStarts(5);
+
+        function printDiamond($num){
+            for($i=1;$i<=$num;$i++){
+                for($j=$num;$j>$i;$j--){
+                    echo"&nbsp";
+                }
+                for($j=1;$j<=$i;$j++){
+                    echo"* ";
+                }
+                echo"<br>";
+            }
+            for($i=$num-1;$i>=0;$i--){
+                for($j=$num;$j>$i;$j--){
+                    echo"&nbsp";
+                }
+                for($j=1;$j<=$i;$j++){
+                    echo"* ";
+                }
+                echo"<br>";
+
+            }
+            echo "<br><br>";
+        }
+        
+        printStars(5);
+        printStarsDesign2(5);
+        printDiamond(5)
         
     ?>
 </body>
