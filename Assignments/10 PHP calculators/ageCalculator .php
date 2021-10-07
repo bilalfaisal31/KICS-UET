@@ -42,7 +42,7 @@ Choose your DOB
 	<select name="yy">
 		<option value="">Year</option>
 	        <?php
-		for($i=1900;$i<=2014;$i++)
+		for($i=1900;$i<=2021;$i++)
 		{
 		echo "<option value='$i'>$i</option>";
 		}
